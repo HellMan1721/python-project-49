@@ -14,4 +14,4 @@ package-install:
 	pipx install --force dist/*.whl
 
 lint:
-	poetry run flake8 brain_games
+	poetry run flake8 engine
