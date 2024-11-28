@@ -23,4 +23,3 @@ def gen_prog():
 if __name__ == '__main__':
 
     gen_prog()
-

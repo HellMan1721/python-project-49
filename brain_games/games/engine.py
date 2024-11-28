@@ -15,7 +15,19 @@ def main():
 
     print('Hello, ' + name + '!')
 
-    current_game = prompt.string('To select your Brain Game, plese enter the corresponding number:\n1. Even Numbers game.\n2. Brain Calculator game.\n3. GCD game.\n4. Progression game.\n5. Prime Numbers game.\n')
+    print('Select your Brain Game:')
+
+    print('1. Even Numbers game.')
+
+    print('2. Brain Calculator game.')
+
+    print('3. GCD game.')
+
+    print('4. Progression game.')
+
+    print('5. Prime Numbers game.')
+
+    current_game = prompt.string('Please, enter the corresponding number.\n')
 
     all_games = ['1', '2', '3', '4', '5']
 
@@ -45,9 +57,7 @@ def main():
 
         return None
 
-
     counter = 0
-
 
     while counter != 3:
 
@@ -97,14 +107,15 @@ def main():
 
         elif user_input != correct_answer:
 
-            print(f"'{user_input}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_input}' is wrong answer ;(.")
+
+            print(f"Correct answer was '{correct_answer}'.")
 
             print(f"Let's try again, {name}!")
 
             counter = 0
 
-
-    print ('Congratulations!')
+    print('Congratulations!')
 
 
 if __name__ == '__main__':
