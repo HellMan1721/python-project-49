@@ -4,7 +4,7 @@ import brain_games.cli as cli
 
 def main():
 
-    name =  cli.welcome_user()
+    name = cli.welcome_user()
 
     return name
 

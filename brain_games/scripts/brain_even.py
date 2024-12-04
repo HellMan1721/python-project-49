@@ -33,7 +33,6 @@ def main():
 
             counter = 0
 
-
     print('Congratulations!')
 
 
