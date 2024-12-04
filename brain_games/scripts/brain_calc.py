@@ -1,4 +1,10 @@
 import random
+import brain_games.games.engine as game
+
+
+def main():
+
+    game.engine(calc)
 
 
 def calc():
@@ -11,13 +17,13 @@ def calc():
 
     ran_oper = random.choice(opers)
 
-    calc_quest = f"{num_1} {ran_oper} {num_2}"
+    a = f"{num_1} {ran_oper} {num_2}"
 
-    calc_answer = eval(calc_quest)
+    b = f"{eval(a)}"
 
-    return [calc_quest, calc_answer]
+    return a, b
 
 
 if __name__ == '__main__':
 
-    calc()
+    main()

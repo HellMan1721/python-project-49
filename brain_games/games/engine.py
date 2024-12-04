@@ -1,101 +1,16 @@
-import brain_games.games.brain_even2 as be2
-import brain_games.games.brain_calc as bc
-import brain_games.games.brain_gcd as bg
-import brain_games.games.brain_progression as gp
-import brain_games.games.brain_prime as pr
 import prompt
-import random
+import brain_games.scripts.brain_games as bg
 
 
-def main():
+def engine(fn):
 
-    print('Welcome to the Brain Games!')
-
-    name = prompt.string('May I have your name? ')
-
-    print('Hello, ' + name + '!')
-
-    print('Select your Brain Game:')
-
-    print('1. Even Numbers game.')
-
-    print('2. Brain Calculator game.')
-
-    print('3. GCD game.')
-
-    print('4. Progression game.')
-
-    print('5. Prime Numbers game.')
-
-    current_game = prompt.string('Please, enter the corresponding number.\n')
-
-    all_games = ['1', '2', '3', '4', '5']
-
-    if current_game == '1':
-
-        print("Launching 'Even Numbers game'...")
-
-    elif current_game == '2':
-
-        print("Launching 'Brain Calculator game'...")
-
-    elif current_game == '3':
-
-        print("Launching 'GCD game'...")
-
-    elif current_game == '4':
-
-        print("Launching 'Progression game'...")
-
-    elif current_game == '5':
-
-        print("Launching 'Prime Numbers game'...")
-
-    if current_game not in all_games:
-
-        print('No game assigned for that number.\nGoodbye!')
-
-        return None
+    name = bg.main()
 
     counter = 0
 
     while counter != 3:
 
-        if current_game == '1':
-
-            brain_question = be2.even2()
-
-            correct_answer = be2.even1(brain_question)
-
-        elif current_game == '2':
-
-            calc_fund = bc.calc()
-
-            brain_question = calc_fund[0]
-
-            correct_answer = f"{calc_fund[1]}"
-
-        elif current_game == '3':
-
-            gcd_fund = bg.ran_gcd()
-
-            brain_question = gcd_fund[0]
-
-            correct_answer = f"{gcd_fund[1]}"
-
-        elif current_game == '4':
-
-            prog_fund = gp.gen_prog()
-
-            brain_question = prog_fund[0]
-
-            correct_answer = f"{prog_fund[1]}"
-
-        elif current_game == '5':
-
-            brain_question = random.randint(1, 100)
-
-            correct_answer = pr.is_prime(brain_question)
+        brain_question, correct_answer = fn()
 
         user_input = prompt.string(f"Question: {brain_question}\n")
 
@@ -116,8 +31,3 @@ def main():
             counter = 0
 
     print('Congratulations!')
-
-
-if __name__ == '__main__':
-
-    main()
