@@ -15,3 +15,9 @@ package-install:
 
 lint:
 	poetry run flake8 engine
+
+push:
+
+	git add -A
+	git commit -m 'quick push'
+	git push
