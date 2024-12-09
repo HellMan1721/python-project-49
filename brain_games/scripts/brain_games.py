@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import brain_games.cli as cli
+import prompt
 
 
 def main():
@@ -9,7 +10,11 @@ def main():
 
 def in_func():
 
-    name = cli.welcome_user()
+    print('Welcome to the Brain Games!')
+
+    name = prompt.string('May I have your name? ')
+
+    print('Hello, ' + name + '!')
 
     return name
 

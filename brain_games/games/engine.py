@@ -4,7 +4,7 @@ import brain_games.scripts.brain_games as bg
 
 def engine(desc, fn):
 
-    name = bg.main()
+    name = bg.in_func()
 
     print(desc)
 
@@ -32,4 +32,4 @@ def engine(desc, fn):
 
             counter = 0
 
-    print('Congratulations!')
+    print(f"Congratulations, {name}!")
