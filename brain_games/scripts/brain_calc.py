@@ -4,7 +4,9 @@ import brain_games.games.engine as game
 
 def main():
 
-    game.engine(calc)
+    desc = 'What is the result of the expression?'
+
+    game.engine(desc, calc)
 
 
 def calc():

@@ -4,7 +4,9 @@ import random
 
 def main():
 
-    games.engine(is_prime)
+    desc = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+    games.engine(desc, is_prime)
 
 
 def is_prime():

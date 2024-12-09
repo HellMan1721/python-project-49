@@ -1,59 +1,25 @@
-import prompt
 import random
-import brain_games.cli as cli
+import brain_games.games.engine as game
 
 
 def main():
 
-    name = cli.welcome_user()
+    desc = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-    counter = 0
-
-    while counter != 3:
-
-        question = even2()
-
-        user_answer = prompt.string(f"Question: {question}\n")
-
-        correct_answer = even1(question)
-
-        if user_answer == correct_answer:
-
-            print('Correct!')
-
-            counter += 1
-
-        elif user_answer != correct_answer:
-
-            print(f"'{user_answer}' is wrong answer ;(.")
-
-            print(f"Correct answer was '{correct_answer}'.")
-
-            print(f"Let's try again, {name}!")
-
-            counter = 0
-
-    print('Congratulations!')
+    game.engine(desc, even)
 
 
-def even1(i=0):
+def even():
 
-    if i % 2 == 0:
+    r = random.randint(1, 100)
 
-        return 'yes'
+    if r % 2 == 0:
 
-    elif i != 0:
+        return r, 'yes'
 
-        return 'no'
+    elif r != 0:
 
-
-def even2():
-
-    r = list(range(1, 100))
-
-    random.shuffle(r)
-
-    return r[random.randint(1, 100)]
+        return r, 'no'
 
 
 if __name__ == '__main__':

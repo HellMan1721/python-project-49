@@ -2,9 +2,11 @@ import prompt
 import brain_games.scripts.brain_games as bg
 
 
-def engine(fn):
+def engine(desc, fn):
 
     name = bg.main()
+
+    print(desc)
 
     counter = 0
 

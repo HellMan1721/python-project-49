@@ -4,7 +4,9 @@ import brain_games.games.engine as games
 
 def main():
 
-    games.engine(gen_prog)
+    desc = 'What number is missing in the progression?'
+
+    games.engine(desc, gen_prog)
 
 
 def gen_prog():

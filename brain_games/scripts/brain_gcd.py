@@ -5,7 +5,9 @@ import brain_games.games.engine as game
 
 def main():
 
-    game.engine(brain_gcd)
+    desc = 'Find the greatest common divisor of given numbers.'
+
+    game.engine(desc, brain_gcd)
 
 
 def brain_gcd():
