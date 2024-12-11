@@ -30,6 +30,8 @@ def engine(desc, fn):
 
             print(f"Let's try again, {name}!")
 
-            counter = 0
+            break
 
-    print(f"Congratulations, {name}!")
+    if counter == 3: 
+
+        print(f"Congratulations, {name}!")
