@@ -1,5 +1,5 @@
-import random
 import brain_games.games.engine as games
+import random
 
 
 def main():
