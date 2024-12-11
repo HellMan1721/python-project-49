@@ -1,5 +1,6 @@
-import prompt
 import brain_games.scripts.brain_games as bg
+
+import prompt
 
 
 def engine(desc, fn):
@@ -32,6 +33,6 @@ def engine(desc, fn):
 
             break
 
-    if counter == 3: 
+    if counter == 3:
 
         print(f"Congratulations, {name}!")
