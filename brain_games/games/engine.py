@@ -1,6 +1,6 @@
-import brain_games.scripts.brain_games as bg
-
 import prompt
+
+import brain_games.scripts.brain_games as bg
 
 
 def engine(desc, fn):
