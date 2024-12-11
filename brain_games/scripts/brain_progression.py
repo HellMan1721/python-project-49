@@ -25,7 +25,9 @@ def gen_prog():
 
     ran_prog[hid_index] = '..'
 
-    return ran_prog, hid_value
+    quest = ', '.join(str(i) for i in ran_prog)
+
+    return quest, hid_value
 
 
 if __name__ == '__main__':
