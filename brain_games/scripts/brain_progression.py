@@ -25,7 +25,7 @@ def gen_prog():
 
     ran_prog[hid_index] = '..'
 
-    quest = ', '.join(str(i) for i in ran_prog)
+    quest = ' '.join(str(i) for i in ran_prog)
 
     return quest, hid_value
 
