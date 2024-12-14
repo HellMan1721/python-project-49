@@ -1,26 +1,10 @@
-import random
-
-import brain_games.games.engine as game
+import brain_games.engine as game
+import brain_games.games.brain_even as plant
 
 
 def main():
 
-    desc = 'Answer "yes" if the number is even, otherwise answer "no".'
-
-    game.engine(desc, even)
-
-
-def even():
-
-    r = random.randint(1, 100)
-
-    if r % 2 == 0:
-
-        return r, 'yes'
-
-    elif r != 0:
-
-        return r, 'no'
+    game.engine(plant.desc, plant.even)
 
 
 if __name__ == '__main__':

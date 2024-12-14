@@ -30,7 +30,7 @@ Python Project 49
 - Документация: Файлы, описывающие использование проекта, включая установки и инструкции по запуску.
 
 ### Технологии
-- Python (версия 3.14)
+- Python (версия 3.12.7)
 
 ### Установка и запуск
 [![asciicast](https://asciinema.org/a/DXEBXmj5clCZOIOBpb1E6R2y0.svg)](https://asciinema.org/a/DXEBXmj5clCZOIOBpb1E6R2y0)

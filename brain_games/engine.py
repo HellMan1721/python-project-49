@@ -1,11 +1,11 @@
 import prompt
 
-import brain_games.scripts.brain_games as bg
+import brain_games.cli as cli
 
 
 def engine(desc, fn):
 
-    name = bg.in_func()
+    name = cli.in_func()
 
     print(desc)
 
