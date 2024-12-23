@@ -3,15 +3,15 @@ import prompt
 import brain_games.cli as cli
 
 
-def engine(DESC, fn):
+def engine(game_module):
 
     name = cli.welcome_user()
 
-    print(DESC)
+    print(game_module.DESC)
 
     for i in range(0, 3):
 
-        brain_question, correct_answer = fn()
+        brain_question, correct_answer = game_module.game()
 
         user_input = prompt.string(f"Question: {brain_question}\n")
 
