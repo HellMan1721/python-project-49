@@ -1,7 +1,7 @@
 import random
 
 
-def gen_prog():
+def game():
 
     ran_length = random.randint(5, 15)
 
@@ -22,4 +22,4 @@ def gen_prog():
     return quest, hid_value
 
 
-desc = 'What number is missing in the progression?'
+DESC = 'What number is missing in the progression?'

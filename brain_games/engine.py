@@ -3,15 +3,13 @@ import prompt
 import brain_games.cli as cli
 
 
-def engine(desc, fn):
+def engine(DESC, fn):
 
-    name = cli.in_func()
+    name = cli.welcome_user()
 
-    print(desc)
+    print(DESC)
 
-    counter = 0
-
-    while counter != 3:
+    for i in range(0, 3):
 
         brain_question, correct_answer = fn()
 
@@ -20,8 +18,6 @@ def engine(desc, fn):
         if user_input == correct_answer:
 
             print('Correct!')
-
-            counter += 1
 
         elif user_input != correct_answer:
 
@@ -33,6 +29,6 @@ def engine(desc, fn):
 
             break
 
-    if counter == 3:
+    else:
 
         print(f"Congratulations, {name}!")

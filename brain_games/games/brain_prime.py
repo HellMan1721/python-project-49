@@ -1,7 +1,7 @@
 import random
 
 
-def is_prime():
+def game():
 
     n = random.randint(1, 100)
 
@@ -32,4 +32,4 @@ def is_prime():
     return question, 'yes'
 
 
-desc = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+DESC = 'Answer "yes" if given number is prime. Otherwise answer "no".'

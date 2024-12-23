@@ -1,7 +1,7 @@
 import random
 
 
-def calc():
+def game():
 
     num_1 = random.randint(1, 100)
 
@@ -18,4 +18,4 @@ def calc():
     return a, b
 
 
-desc = 'What is the result of the expression?'
+DESC = 'What is the result of the expression?'

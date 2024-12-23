@@ -1,10 +1,10 @@
-import brain_games.engine as game
-import brain_games.games.brain_gcd as plant
+import brain_games.engine as games
+import brain_games.games.brain_gcd as gcd
 
 
 def main():
 
-    game.engine(plant.desc, plant.brain_gcd)
+    games.engine(gcd.DESC, gcd.game)
 
 
 if __name__ == '__main__':

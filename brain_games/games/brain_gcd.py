@@ -2,7 +2,7 @@ import math
 import random
 
 
-def brain_gcd():
+def game():
 
     num_1 = random.randint(1, 100)
 
@@ -15,4 +15,4 @@ def brain_gcd():
     return ran_num, gcd_answer
 
 
-desc = 'Find the greatest common divisor of given numbers.'
+DESC = 'Find the greatest common divisor of given numbers.'

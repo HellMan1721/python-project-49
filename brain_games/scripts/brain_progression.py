@@ -1,10 +1,10 @@
 import brain_games.engine as games
-import brain_games.games.brain_progression as plant
+import brain_games.games.brain_progression as prg
 
 
 def main():
 
-    games.engine(plant.desc, plant.gen_prog)
+    games.engine(prg.DESC, prg.game)
 
 
 if __name__ == '__main__':
