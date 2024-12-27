@@ -27,4 +27,6 @@ def gen():
 
         result = num_1 * num_2
 
-    return question, result
+    answer = f'{result}'
+
+    return question, answer
