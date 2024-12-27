@@ -1,7 +1,9 @@
 import random
 
+DESC = 'What is the result of the expression?'
 
-def game():
+
+def gen():
 
     num_1 = random.randint(1, 100)
 
@@ -13,9 +15,16 @@ def game():
 
     a = f"{num_1} {ran_oper} {num_2}"
 
-    b = f"{eval(a)}"
+    if ran_oper == '+':
 
-    return a, b
+        result = num_1 + num_2
 
+    elif ran_oper == '-':
 
-DESC = 'What is the result of the expression?'
+        result = num_1 - num_2
+
+    elif ran_oper == '*':
+
+        result = num_1 * num_2
+
+    return a, result

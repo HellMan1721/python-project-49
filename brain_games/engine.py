@@ -1,17 +1,21 @@
 import prompt
 
-import brain_games.cli as cli
+ROUNDS = range(3)
 
 
-def engine(game_module):
+def engine(game):
 
-    name = cli.welcome_user()
+    print('Welcome to the Brain Games!')
 
-    print(game_module.DESC)
+    name = prompt.string('May I have your name? ')
 
-    for i in range(0, 3):
+    print('Hello, ' + name + '!')
 
-        brain_question, correct_answer = game_module.game()
+    print(game.DESC)
+
+    for i in ROUNDS:
+
+        brain_question, correct_answer = game.gen()
 
         user_input = prompt.string(f"Question: {brain_question}\n")
 

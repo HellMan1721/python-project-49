@@ -1,8 +1,10 @@
 import math
 import random
 
+DESC = 'Find the greatest common divisor of given numbers.'
 
-def game():
+
+def gen():
 
     num_1 = random.randint(1, 100)
 

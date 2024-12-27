@@ -1,23 +1,21 @@
 import random
 
+DESC = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-def game():
 
-    n = random.randint(1, 100)
-
-    question = f"{n}"
+def isPrime(n):
 
     if n <= 1:
 
-        return question, 'no'
+        return False
 
     if n <= 3:
 
-        return question, 'yes'
+        return True
 
     if n % 2 == 0 or n % 3 == 0:
 
-        return question, 'no'
+        return False
 
     i = 5
 
@@ -25,11 +23,23 @@ def game():
 
         if n % i == 0 or n % (i + 2) == 0:
 
-            return question, 'no'
+            return False
 
         i += 6
+        
+    return True
 
-    return question, 'yes'
 
+def gen():
 
-DESC = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+    n = random.randint(1, 100)
+
+    question = f"{n}"
+
+    if is_prime(n):
+
+        return question, 'yes'
+
+    else:
+
+        return question, 'no'

@@ -1,7 +1,9 @@
 import random
 
+DESC = 'Answer "yes" if the number is even, otherwise answer "no".'
 
-def game():
+
+def gen():
 
     r = random.randint(1, 100)
 
@@ -12,6 +14,3 @@ def game():
     elif r != 0:
 
         return r, 'no'
-
-
-DESC = 'Answer "yes" if the number is even, otherwise answer "no".'

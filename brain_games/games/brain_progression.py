@@ -1,7 +1,9 @@
 import random
 
+DESC = 'What number is missing in the progression?'
 
-def game():
+
+def gen():
 
     ran_length = random.randint(5, 15)
 
@@ -9,7 +11,7 @@ def game():
 
     ran_step = random.randint(1, 10)
 
-    ran_prog = [ran_start + ran_step * i for i in range(ran_length)]
+    ran_prog = list(range(ran_start, ran_start + ran_length * ran_step, ran_step))
 
     hid_index = random.randint(0, ran_length - 1)
 
@@ -20,6 +22,3 @@ def game():
     quest = ' '.join(str(i) for i in ran_prog)
 
     return quest, hid_value
-
-
-DESC = 'What number is missing in the progression?'
