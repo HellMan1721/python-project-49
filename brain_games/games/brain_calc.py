@@ -13,7 +13,7 @@ def gen():
 
     ran_oper = random.choice(opers)
 
-    a = f"{num_1} {ran_oper} {num_2}"
+    question = f"{num_1} {ran_oper} {num_2}"
 
     if ran_oper == '+':
 
@@ -27,4 +27,4 @@ def gen():
 
         result = num_1 * num_2
 
-    return a, result
+    return question, result

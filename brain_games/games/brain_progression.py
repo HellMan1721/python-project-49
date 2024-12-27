@@ -5,15 +5,15 @@ DESC = 'What number is missing in the progression?'
 
 def gen():
 
-    ran_length = random.randint(5, 15)
+    start = random.randint(1, 10)
 
-    ran_start = random.randint(1, 10)
+    step = random.randint(1, 10)
 
-    ran_step = random.randint(1, 10)
+    end = start + random.randint(5, 15) * step
 
-    ran_prog = list(range(ran_start, ran_start + ran_length * ran_step, ran_step))
+    ran_prog = list(range(start, end, step))
 
-    hid_index = random.randint(0, ran_length - 1)
+    hid_index = random.randint(0, len(ran_prog) - 1)
 
     hid_value = f"{ran_prog[hid_index]}"
 

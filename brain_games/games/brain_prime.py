@@ -26,7 +26,7 @@ def isPrime(n):
             return False
 
         i += 6
-        
+
     return True
 
 
@@ -36,7 +36,7 @@ def gen():
 
     question = f"{n}"
 
-    if is_prime(n):
+    if isPrime(n):
 
         return question, 'yes'
 
