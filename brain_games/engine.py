@@ -8,7 +8,7 @@ def engine(game):
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
     print(game.DESC)
-    for _ in ROUNDS_COUNT:
+    for _ in range(ROUNDS_COUNT):
         brain_question, correct_answer = game.gen_gamedata()
         user_input = prompt.string(f"Question: {brain_question}\n")
         if user_input == correct_answer:
