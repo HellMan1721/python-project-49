@@ -1,15 +1,15 @@
 import random
 
-DESC = 'What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
 
 
 def gen_gamedata():
     start = random.randint(1, 10)
     step = random.randint(1, 10)
     end = start + random.randint(5, 15) * step
-    ran_prog = list(range(start, end, step))
-    hid_index = random.randint(0, len(ran_prog) - 1)
-    hid_value = f"{ran_prog[hid_index]}"
-    ran_prog[hid_index] = '..'
-    quest = ' '.join(str(i) for i in ran_prog)
-    return quest, hid_value
+    random_progression = list(range(start, end, step))
+    hidden_index = random.randint(0, len(random_progression) - 1)
+    hidden_value = f"{random_progression[hidden_index]}"
+    random_progression[hidden_index] = '..'
+    question = ' '.join(str(i) for i in random_progression)
+    return quest, hidden_value

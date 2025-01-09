@@ -1,6 +1,6 @@
 import random
 
-DESC = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def gen_gamedata():

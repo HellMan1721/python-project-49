@@ -7,7 +7,7 @@ def engine(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
-    print(game.DESC)
+    print(game.DESCRIPTION)
     for _ in range(ROUNDS_COUNT):
         brain_question, correct_answer = game.gen_gamedata()
         user_input = prompt.string(f"Question: {brain_question}\n")

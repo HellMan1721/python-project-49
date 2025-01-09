@@ -7,4 +7,3 @@ coverage.xml
 .pytest_cache/
 **/__pycache__/
 demo.cast
-brain_games/scripts/__init__.pyc
