@@ -13,9 +13,9 @@ def isPrime(n):
 
 
 def gen_gamedata():
-    n = random.randint(1, 100)
-    question = f"{n}"
-    if isPrime(n):
+    random_number = random.randint(1, 100)
+    question = f"{random_number}"
+    if isPrime(random_number):
         return question, 'yes'
     else:
         return question, 'no'
