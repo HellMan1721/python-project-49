@@ -12,4 +12,4 @@ def gen_gamedata():
     hidden_value = f"{random_progression[hidden_index]}"
     random_progression[hidden_index] = '..'
     question = ' '.join(str(i) for i in random_progression)
-    return quest, hidden_value
+    return question, hidden_value
